@@ -1,0 +1,26 @@
+name: MiniHub
+version: ${project.version}
+main: cz.danix25.minihub.Minihub
+api-version: 1.16
+depend: [PlaceholderAPI]
+commands:
+  vanish:
+    aliases: v
+  gamemode:
+    aliases: gm
+  fly:
+    aliases: fly
+  lobby:
+    aliases: [ lobby, hub ]
+  setlobby:
+    aliases: [ setlobby, sethub ]
+  permissions:
+    spawn.set:
+      default: op
+    spawn.tp:
+  sb:
+    description: Reload config
+    usage: /<command>
+permissions:
+  sb.reload:
+    default: op
